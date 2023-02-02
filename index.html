@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RPS Game</title>
+  <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>Rock Paper Scissors</header>
+  <main>
+    <section class="top">
+      <div class="result">Winner: <span id="result">Tie</span></div>
+    </section>
+
+    <section class="scores">
+
+      <div class="output">
+        <div class="user">
+          <p id="userp"><span id="username">User:</span> <span id="userscore">0</span></p>
+          <i class="fas fa-hand-rock" id="user"></i>
+        </div>
+        <div class="user">
+          <p id="compp">Computer: <span id="compscore">0</span></p>
+          <i class="fas fa-hand-paper" id="comp"></i>
+        </div>
+      </div>
+
+      <div class="game">
+        <div class="ctr" id="rock">
+          <i class="fas fa-hand-rock" id=""></i>
+        </div>
+
+        <div class="ctr" id="paper">
+          <i class="fas fa-hand-paper"></i>
+        </div>
+
+        <div class="ctr" id="scissors">
+          <i class="fas fa-hand-scissors"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
