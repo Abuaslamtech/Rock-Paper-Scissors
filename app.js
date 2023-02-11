@@ -19,7 +19,9 @@ if (Uname == false) {
 }
 username.innerHTML = Uname + ":";
 username.style.background = "none";
-
+//the output
+const uoutput = document.getElementById("user");
+const coutput = document.getElementById("comp");
 //get users
 const user = document.getElementById("userscore");
 const comp = document.getElementById("compscore");
@@ -41,6 +43,10 @@ const play = (op) => {
     userid.style.background = "green";
     compid.style.color = "#fff";
     compid.style.background = "red";
+    uoutput.style.color = "#fff";
+    uoutput.style.background = "#a9e14d";
+    coutput.style.color = "#fff";
+    coutput.style.background = "red";
   } else {
     compscore = compscore + 1;
     comp.innerHTML = compscore;
@@ -51,6 +57,10 @@ const play = (op) => {
     userid.style.background = "red";
     compid.style.color = "#fff";
     compid.style.background = "green";
+    uoutput.style.color = "#fff";
+    uoutput.style.background = "red";
+    coutput.style.color = "#fff";
+    coutput.style.background = "#a9e14d";
   }
 };
 function winning() {
@@ -65,14 +75,17 @@ function winning() {
 function rockOp() {
   play(rock);
   winning();
+  uoutput.className = "fas fa-hand-rock";
 }
 function paperOp() {
   play(paper);
   winning();
+  uoutput.className = "fas fa-hand-paper";
 }
 function sciOp() {
   play(sci);
   winning();
+  uoutput.className = "fas fa-hand-scissors";
 }
 const game = () => {};
 rock.addEventListener("click", rockOp);

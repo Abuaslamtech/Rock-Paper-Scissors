@@ -73,8 +73,7 @@ p {
   justify-content: space-around;
   align-items: center;
 }
-#user,
-#comp {
+.user .fas {
   font-size: 5rem;
   color: var(--bg);
   background-color: var(--secondary);
@@ -104,12 +103,16 @@ p {
 }
 #rock,
 #paper,
-#sci {
+#scissors {
   background-color: var(--bg);
   color: var(--primary);
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    height: 2rem;
+    font-size: 1.7rem;
+  }
   .scores,
   .output {
     width: 100vw;
@@ -125,5 +128,22 @@ p {
   }
   p {
     width: 80%;
+  }
+  .user .fas {
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ctr {
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  .user {
+    height: 30vh;
   }
 }
