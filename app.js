@@ -61,6 +61,7 @@ const play = (op) => {
     uoutput.style.background = "red";
     coutput.style.color = "#fff";
     coutput.style.background = "#a9e14d";
+    coutput.className = `fas fa-hand-${options[randomNum]}`;
   }
 };
 function winning() {
